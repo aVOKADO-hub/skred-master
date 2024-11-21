@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управління працівниками</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="./employee-management.html"class="active">Управління працівниками</a></li>
+                <li><a href="./department-overview.html" >Огляд відділів</a></li>
+                <li><a href="./reports.html">Звіти</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main special">
+        <section>
+            <h1>Управління працівниками</h1>
+            <p>Додайте, редагуйте або видаляйте записи про працівників вашого інституту.</p>
+            <button id="addEmployee">Додати працівника</button>
+        </section>
+        <section>
+            <h2>Список працівників</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ім'я</th>
+                            <th>Прізвище</th>
+                            <th>Відділ</th>
+                            <th>Посада</th>
+                            <th>Дія</th>
+                        </tr>
+                    </thead>
+                    <tbody id="employeeTable">
+                        <!-- Employee rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Відділ кадрів інституту</p>
+    </footer>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

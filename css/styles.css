@@ -1,0 +1,261 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for themes */
+}
+
+/* Light Theme */
+body.light-theme {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+body.light-theme header,
+body.light-theme footer {
+  background-color: #141414;
+  color: white;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+  background-color: #444;
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+/* Header Styling */
+header {
+  padding: 10px 0;
+  background-color: #000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+  transition: 0.1s;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.special {
+  height: 88vh;
+  padding: 50px;
+}
+.hero {
+  position: relative;
+  color: #141414;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/back.jpg") no-repeat center center/cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+.hero > div {
+  width: 60%;
+  height: 60%;
+  background-color: #ffffffc7;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  padding: 10px;
+}
+.about,
+.features,
+.cta,
+.cta > a,
+.feature {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.about ul li {
+  font-size: 20px;
+}
+.features {
+  background-color: #000;
+}
+.features h2 {
+  color: white;
+}
+.feature-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.feature {
+  width: 27%;
+  background-color: #fff;
+  height: 200px;
+  border-radius: 10px;
+  transition: 0.1s;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.feature:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.cta > a {
+  background-color: #000;
+  border-radius: 30px;
+  color: white;
+  height: 50px;
+  width: 100px;
+  text-decoration: none;
+}
+/* Footer Styling */
+footer {
+  background-color: #141414;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Form Elements */
+input,
+select {
+  padding: 8px;
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Table Styling (for reports) */
+.table-container {
+  height: 400px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+#exportBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+#exportBtn:hover {
+  background-color: #0056b3;
+}
+canvas {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
